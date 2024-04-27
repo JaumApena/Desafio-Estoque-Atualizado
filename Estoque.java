@@ -14,9 +14,9 @@ public class Estoque {
     }
     public void listarItens() {
         if (itens.isEmpty()) {
-            System.out.println("Nenhum item cadastrado no estoque.");
+            System.out.println("Nenhum item cadastrado.");
         } else {
-            System.out.println("Itens cadastrados no estoque:");
+            System.out.println("Itens cadastrados:");
             for (Item item : itens) {
                 System.out.println(item);
             }
