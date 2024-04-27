@@ -5,8 +5,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Estoque estoque = new Estoque();
 
-        boolean executando = true;
-        while (executando) {
+        boolean menu = true;
+        while (menu) {
             System.out.println("\nMenu:");
             System.out.println("1 - Cadastrar novo item");
             System.out.println("2 - Listar itens cadastrados");
