@@ -8,20 +8,20 @@ public class Main {
         boolean menu = true;
         while (menu) {
             System.out.println("\nMenu:");
-            System.out.println("1 - Cadastrar novo item");
-            System.out.println("2 - Listar itens cadastrados");
-            System.out.println("3 - Sair do programa");
+            System.out.println("1 - Cadastrar um item");
+            System.out.println("2 - Listar itens ");
+            System.out.println("3 - Desligar programa");
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
             scanner.nextLine();
 
             switch (opcao) {
                 case 1:
-                    System.out.print("Digite o nome do produto: ");
+                    System.out.print("Digite o nome do item: ");
                     String nome = scanner.nextLine();
-                    System.out.print("Digite a quantidade do produto: ");
+                    System.out.print("Digite a quantidade do item: ");
                     int quantidade = scanner.nextInt();
-                    System.out.print("Digite o preço do produto: ");
+                    System.out.print("Digite o preço do item: ");
                     double preco = scanner.nextDouble();
                     estoque.cadastrarItem(nome, quantidade, preco);
                     break;
@@ -29,7 +29,7 @@ public class Main {
                     estoque.listarItens();
                     break;
                 case 3:
-                    System.out.println("Saindo do programa...");
+                    System.out.println("Desligando programa...");
                     menu = false;
                     break;
                 default:
