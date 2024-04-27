@@ -30,7 +30,7 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("Saindo do programa...");
-                    executando = false;
+                    menu = false;
                     break;
                 default:
                     System.out.println("Opção inválida. Por favor, escolha uma opção válida.");
